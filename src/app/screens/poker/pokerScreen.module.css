@@ -1,0 +1,7 @@
+.gameContainer {
+    margin: 20px;
+}
+
+.numberCard {
+    flex-grow: 1;
+}
