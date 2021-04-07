@@ -1,7 +1,10 @@
-.gameContainer {
-    margin: 20px;
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: brown;
 }
 
-.numberCard {
-    flex-grow: 1;
+.game {
+    flex: 1;
 }

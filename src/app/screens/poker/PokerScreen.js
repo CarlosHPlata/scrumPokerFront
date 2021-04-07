@@ -1,36 +1,39 @@
-import { Button, Grid, Paper, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import React from 'react';
 
 import styles from './pokerScreen.module.css';
+
 import ActiveStory from './components/activeStory/ActiveStory';
 import Actions from './components/actions/Actions';
+import ActiveStoryPoints from './components/ActiveStoryPoints/ActiveStoryPoints';
+import Game from './components/Game/Game';
+import CardSelector from './components/cardsSelector/CardSelector';
 
-export default (props) => {
+const PokerScreen = (props) => {
 
     return (
-        <div className={styles.screen}>
-            <Grid className={styles.gameContainer} container>
-                <Grid item container justify="space-between" spacing={2} alignItems="stretch" xs={10}>
-                    <Grid item container direction="column" xs={11}>
+        <Grid container className={styles.container} direction="row">
+            <Grid item container md={10} xs={12} direction="column">
+                <Grid container direction="row">
+                    <Grid item container xs={11}>
                         <ActiveStory />
-                        <Actions />
                     </Grid>
-                    <Grid  item container alignItems="stretch" xs={1}> 
-                        <Paper className={styles.numberCard}>
-                            <Grid item container xs>
-                                <Typography variant="h3">
-                                    2
-                                </Typography>
-                            </Grid>
-                        </Paper>
+                    <Grid item container xs={1}>
+                        <ActiveStoryPoints />
                     </Grid>
                 </Grid>
-                <Grid item xs={2}>
-                    <Typography>
-                        asdfasd
-                    </Typography>
+                <Grid className={styles.game} container direction="row">
+                    <Game />
+                </Grid>
+                <Grid container>
+                    <CardSelector />
                 </Grid>
             </Grid>
-        </div>
+            <Grid item container xs={2} direction="column">
+                asdfasdf
+            </Grid>
+        </Grid>
     );
 };
+
+export default PokerScreen;

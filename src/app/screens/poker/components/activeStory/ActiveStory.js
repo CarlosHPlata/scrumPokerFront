@@ -1,25 +1,18 @@
 import React from 'react';
-import { Grid, Paper, Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 
-import styles from './activeStory.module.css';
+//import styles from './activeStory.module.css';
 import ActionCard from '../../../../components/actionCard/ActionCard';
 
-export default (props) => {
+const ActiveStory = (props) => {
     return (
         <ActionCard>
-            <Grid container direction="row">
+            <Grid container direction="column">
                 <Typography variant="h5">
-                    US01 As a user I would like to be able to create an API Connector that uses other HTTP Methods
+                    US01 As a user I would like to win on valorant
                 </Typography>
-                <br/>
                 <Typography>
-                    As a user I would like to be able to create an API connector that can connect with
-                    GET
-                    HEAD
-                    POST
-                    CONNECT
-                    OPTIONS
-                    TRACE 
+                    As a user I will kill alll enemies do a penta kill and win being MVP with more that 5 of KDA
                 </Typography>
             </Grid>
             
@@ -27,3 +20,5 @@ export default (props) => {
                     
     );
 };
+
+export default ActiveStory;

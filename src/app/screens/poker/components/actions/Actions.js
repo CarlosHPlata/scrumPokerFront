@@ -1,13 +1,14 @@
 import { Button, Grid } from '@material-ui/core';
 import React from 'react';
-import ActionCard from '../../../../components/actionCard/ActionCard';
 import RefreshIcon from '@material-ui/icons/Refresh';
 import ReplyIcon from '@material-ui/icons/Reply';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
-export default (props) => {
+import ActionCard from '../../../../components/actionCard/ActionCard';
+
+const Actions = (props) => {
     return (
         <ActionCard>
             <Grid item container justify="space-around" direction="row">
@@ -20,3 +21,5 @@ export default (props) => {
         </ActionCard>
     );
 };
+
+export default Actions;
