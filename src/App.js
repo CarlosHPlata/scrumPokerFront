@@ -2,9 +2,8 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PokerScreen from './app/screens/poker/PokerScreen';
-import { AppBar, Button, IconButton, Toolbar, Typography } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu'
 
+import ActionCard from './app/components/actionCard/ActionCard';
 
 function App() {
     return (
@@ -24,14 +23,8 @@ function App() {
             </nav>*/}
 
             <Switch>
-                <Route path="/about">
-                    <div>Hello world 1</div>
-                </Route>
-                <Route path="/users">
-                    <div>Hello world 2</div>
-                </Route>
-                <Route path="/">
-                    <AppBar position="static">
+                <Route path="/game">
+                    {/* <AppBar position="static">
                         <Toolbar>
                             <IconButton edge="start" className={'Hello'} color="inherit" aria-label="menu">
                                 <MenuIcon />
@@ -39,8 +32,15 @@ function App() {
                             <Typography variant="h6" className={"title"}>News</Typography>
                             <Button color="inherit">Login</Button>
                         </Toolbar>
-                    </AppBar>
+                    </AppBar> */}
                     <PokerScreen />
+                </Route>
+                <Route path="/">
+                    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1}}>
+                        <ActionCard>
+                            asdfasdfas
+                        </ActionCard>
+                    </div>
                 </Route>
             </Switch>
         </Router>

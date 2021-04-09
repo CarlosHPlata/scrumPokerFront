@@ -1,5 +1,9 @@
 .card {
     margin: 1em;
-    padding: 1em;
-    flex: 1
+    padding: 30px;
+    flex: 1;
+    color: #e6e7ee !important;
+    background: rgba(15, 14, 71, 0.3) !important;
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset !important;
+    border-radius: 20px !important;
 }

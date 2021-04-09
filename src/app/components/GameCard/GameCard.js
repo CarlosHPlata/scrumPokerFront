@@ -15,11 +15,11 @@ const GameCard = (props) => {
             return styles.cardPass;
         }
 
-        if (parseInt(props.value) <= 3) {
+        if (parseInt(props.value) <= 5) {
             return styles.cardLow;
         }
 
-        if (parseInt(props.value) > 3 && parseInt(props.value) <= 13) {
+        if (parseInt(props.value) > 5 && parseInt(props.value) <= 20) {
             return styles.cardMedium;
         }
 
@@ -30,10 +30,10 @@ const GameCard = (props) => {
         return styles.cardUnknown;
     };
 
-    const classNamet = `${styles.card} ${getType()}`;
+    const classNamet = `${styles.card} ${getType()} ${props.isSelectable? styles.selectable : ''}`;
 
     return (
-        <div className={styles.cardContainer}>
+        <div className={`${styles.cardContainer} ${props.isSelectable? styles.selectable : ''}`}>
             <Paper className={classNamet}>
                 <Typography variant={props.value === 'pass'? 'h4' : 'h3'}>{ props.value !=null? (props.value + '').toUpperCase() : '-' }</Typography>
             </Paper>

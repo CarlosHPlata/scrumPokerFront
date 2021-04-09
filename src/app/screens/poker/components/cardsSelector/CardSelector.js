@@ -9,24 +9,20 @@ const CardSelector = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.front}>
-                <GameCard value="0" />
-                <GameCard value="0.5" />
-                
-                <GameCard value="1" />
-                <GameCard value="2" />
-                
-                <GameCard value="3" />
-                <GameCard value="5" />
-                
-                <GameCard value="8" />
-                <GameCard value="13" />
-                
-                <GameCard value="20" />
-                <GameCard value="40" />
-                <GameCard value="100" />
+                <GameCard value="0" isSelectable />
+                <GameCard value="0.5" isSelectable />
+                <GameCard value="1" isSelectable />
+                <GameCard value="2" isSelectable />
+                <GameCard value="3" isSelectable />
+                <GameCard value="5" isSelectable />
+                <GameCard value="8" isSelectable />
+                <GameCard value="13" isSelectable />
+                <GameCard value="20" isSelectable />
+                <GameCard value="40" isSelectable />
+                <GameCard value="100" isSelectable />
 
-                <GameCard value="pass" />
-                <GameCard value="?" />
+                <GameCard value="pass" isSelectable />
+                <GameCard value="?" isSelectable />
             </div>
         </div>
     );

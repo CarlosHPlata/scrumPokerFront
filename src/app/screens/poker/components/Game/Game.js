@@ -10,7 +10,7 @@ const Game = (props) => {
             <Grid container justify='center' spacing={4} direction="row">
                 <Grid item container justify='center' alignItems='center' md={2} xs={4} direction="column">
                     <Typography> Raul Zamudio</Typography>
-                    <GameCard  value="21" />
+                    <GameCard  value="100" />
                 </Grid>
                 <Grid item container justify='center' alignItems='center' md={2} xs={4} direction="column">
                     <Typography> Raul Zamudio</Typography>
@@ -23,10 +23,6 @@ const Game = (props) => {
                 <Grid item container justify='center' alignItems='center' md={2} xs={4} direction="column">
                     <Typography> Raul Zamudio</Typography>
                     <GameCard  value="pass" />
-                </Grid>
-                <Grid item container justify='center' alignItems='center' md={2} xs={4} direction="column">
-                    <Typography> Raul Zamudio</Typography>
-                    <GameCard  value="?" />
                 </Grid>
                 <Grid item container justify='center' alignItems='center' md={2} xs={4} direction="column">
                     <Typography> Raul Zamudio</Typography>

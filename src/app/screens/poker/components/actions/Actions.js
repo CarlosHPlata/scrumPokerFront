@@ -6,19 +6,16 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
-import ActionCard from '../../../../components/actionCard/ActionCard';
 
 const Actions = (props) => {
     return (
-        <ActionCard>
-            <Grid item container justify="space-around" direction="row">
-                <Button variant="contained" color="secondary" startIcon={<RefreshIcon />}> Reset Cards</Button>
-                <Button variant="contained" startIcon={<ReplyIcon />}> Flip Cards</Button>
-                <Button variant="contained" startIcon={<ArrowBackIosIcon />}> Previous</Button>
-                <Button variant="contained" startIcon={<ArrowForwardIosIcon /> }>Next</Button>
-                <Button variant="contained" startIcon={<DoubleArrowIcon />}> Next Unpointed Story</Button>
-            </Grid>
-        </ActionCard>
+        <Grid item container justify="space-around" direction="row">
+            <Button variant="contained" color="secondary" startIcon={<RefreshIcon />}> Reset Cards</Button>
+            <Button variant="contained" startIcon={<ReplyIcon />}> Flip Cards</Button>
+            <Button variant="contained" startIcon={<ArrowBackIosIcon />}> Previous</Button>
+            <Button variant="contained" startIcon={<ArrowForwardIosIcon /> }>Next</Button>
+            <Button variant="contained" startIcon={<DoubleArrowIcon />}> Next Unpointed Story</Button>
+        </Grid>
     );
 };
 
